@@ -33,7 +33,9 @@ lines(date_time_data, cons_data$Sub_metering_3, col = "blue")
 legend("topright"
        , legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
        , col = c("black", "red", "blue")
-       , lty = c(1, 1, 1))
+       , lty = c(1, 1, 1)
+       , bty = "n")
+        
 
 plot(date_time_data, cons_data$Global_reactive_power, type = "l", ylab = "Global_reactive_power", xlab = "datetime")
 
